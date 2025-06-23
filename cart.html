@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho Digital - Carrinho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mercadinho Digital</h1>
+            <div class="header-actions">
+                <span class="user-info">Olá, <span id="userName"></span>!</span>
+                <button id="backToCatalog" class="back-btn">Voltar ao Catálogo</button>
+                <button id="logoutBtn" class="logout-btn">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h2>Meu Carrinho</h2>
+            <div id="cartItems" class="cart-items"></div>
+            <div class="cart-summary">
+                <div class="total">
+                    <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                </div>
+                <div class="cart-actions">
+                    <button id="clearCart" class="clear-btn">Limpar Carrinho</button>
+                    <button id="checkoutBtn" class="checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
